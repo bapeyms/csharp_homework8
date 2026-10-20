@@ -22,6 +22,21 @@ public class Matrix
         _matrix = new int[Rows, Cols];
     }
 
+    public Matrix(int[,] values)
+    {
+        Rows = values.GetLength(0);
+        Cols = values.GetLength(1);
+        _matrix = new int[Rows, Cols];
+
+        for (int i = 0; i < Rows; i++)
+        {
+            for (int j = 0; j < Cols; j++)
+            {
+                _matrix[i, j] = values[i, j];
+            }
+        }
+    }
+
     public int this[int row, int col]
     {
         get
