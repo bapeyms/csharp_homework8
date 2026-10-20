@@ -43,5 +43,9 @@ class Program
         Console.WriteLine($"e1 > e2: {e1 > e2}");
         Console.WriteLine($"e1 < e2: {e1 < e2}");
         Console.WriteLine($"e1.Equals(e3): {e1.Equals(e3)}");
+        
+        Console.WriteLine("--- TASK 2 ---");
+        Matrix m1 = new Matrix(2, 2);
+        Matrix m2 = new Matrix(2, 2);
     }
 }
